@@ -1,5 +1,4 @@
 function addTwoDigits(n) {
-var strN = String(n);
-    return parseInt(strN[0])+parseInt(strN[1]);
+      return parseInt( n / 10 + n % 10 );
 }
 
