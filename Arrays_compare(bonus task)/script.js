@@ -17,8 +17,8 @@ function minPrime(n) {
     return n;
 }
 
-function* prime() {
-    var numb = 0;
+function* prime(numb = 2) {
+
 
     while (true) {
         if (isPrime(numb)) {
@@ -28,6 +28,8 @@ function* prime() {
 }
 
 function getX(n) {
+
+
     let rightNumb = Math.pow(2, n) - 1;
     let leftNumb = -rightNumb;
     let x = [];
@@ -83,8 +85,7 @@ if( v ==  minPrime(n * xArr.length) )
         let hasSame = tempArr.some((value) => {
             return array.indexOf(value) !== -1;
         });
-console.log(tempArr);
-console.log(v);
+
         if (!hasSame) {
             array = array.concat(tempArr);
             result.v.push(v);
