@@ -1,4 +1,6 @@
-
+/*
+Implement a function that can sum two reduced fractions and produce a new one.
+*/
 function gcd(a, b) {
     if (b) {
         return gcd(b, a % b);
